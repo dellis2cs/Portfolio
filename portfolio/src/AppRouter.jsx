@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import Header from "./components/Header";
 import Work from "./components/Work";
@@ -21,7 +21,7 @@ export default function AppRouter() {
           <Header />
           <Routes>
             <Route path="/" element={<Work />} />
-            <Route path="/about" element={<About />} />{" "}
+            <Route path="/about" element={<About />} />
           </Routes>
         </Router>
       )}

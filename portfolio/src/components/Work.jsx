@@ -293,7 +293,7 @@ function Projects() {
           >
             {/* Background video */}
             <video
-              src="Kaze.mp4"
+              src="/Kaze.mp4" // Correct path for the video in the public folder
               className="absolute top-0 left-0 w-full h-full object-cover"
               autoPlay
               loop

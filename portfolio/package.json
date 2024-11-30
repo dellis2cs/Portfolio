@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://dellis2cs.github.io/Portfolio",
+  "homepage": "https://dellis2cs.github.io/Portfolio/",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,7 +11,6 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
-    
   },
   "dependencies": {
     "@splinetool/react-spline": "^4.0.0",

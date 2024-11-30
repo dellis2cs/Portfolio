@@ -2,7 +2,6 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Hamburger from "hamburger-react";
-
 import "aos/dist/aos.css";
 
 function Header() {
@@ -31,7 +30,7 @@ function Header() {
 
         {/* Pill Switcher - Centered and Visible on All Screens */}
         <div
-          className="pillHeader flex justify-center items-center mx-auto backdrop-blur-[4px] "
+          className="pillHeader flex justify-center items-center mx-auto backdrop-blur-[4px]"
           data-aos="zoom-in"
         >
           <div className="relative border-[1px] border-[#494b56] text-white p-4 w-[200px] rounded-full flex justify-around items-center bg-[rgba(0,0,0,0.5)]">
@@ -75,15 +74,19 @@ function Header() {
 
         {/* Right Section with Icons - Only on Desktop */}
         <div
-          className="rightHeader hidden md:flex items-center gap-6 "
+          className="rightHeader hidden md:flex items-center gap-6"
           data-aos="fade-left"
         >
           <a
-            href="#"
-            className="hover:text-gray-400 transition-all duration-300 "
+            href="/resume.pdf"
+            download="resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-400 transition-all duration-300"
           >
             Resume
           </a>
+
           <a
             href="https://github.com/dellis2cs"
             target="_blank"
@@ -92,7 +95,6 @@ function Header() {
           >
             <FaGithub />
           </a>
-
           <a
             href="https://www.linkedin.com/in/dominic-ellis-b63ab8238/"
             target="_blank"
@@ -129,12 +131,14 @@ function Header() {
               About
             </Link>
             <a
-              href="#"
+              href="/resume.pdf"
+              download="resume.pdf"
               className="hover:text-gray-400 transition-all duration-300"
               onClick={() => setOpen(false)}
             >
               Resume
             </a>
+
             <a
               href="https://github.com/dellis2cs"
               target="_blank"
