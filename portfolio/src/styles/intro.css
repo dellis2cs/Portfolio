@@ -1,0 +1,20 @@
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 2rem;
+  color: white;
+  animation: fadeOut 1s ease forwards;
+  animation-delay: 1s;
+  font-weight: lighter;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

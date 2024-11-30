@@ -1,0 +1,27 @@
+.icon {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.icon:hover::after {
+  content: attr(title); /* This will use the title attribute as the content */
+  position: absolute;
+  top: -30px; /* Adjust this value based on the position you want the label */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-size: 12px;
+  z-index: 10;
+}
+
+.icon:hover {
+  transform: scale(1.1); /* Optional: enlarge icon on hover */
+  /* box-shadow: 0px 0px 281px 4px rgba(255, 255, 255, 0.52); */
+}
